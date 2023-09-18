@@ -214,3 +214,40 @@ footer a:not(.nav-link) {
   background: #bdbdbd;
 }
 
+
+
+.mytabs2 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width; 600px;
+  margin: 50px auto;
+  padding: 25px;
+}
+
+.mytabs2 input[type:"radio"] {
+  display: none;
+}
+
+.mytabs2 label {
+  padding: 25px;
+  background: #e2e2e2;
+  font-weight: bold;
+}
+
+.mytabs2 .tab2 {
+  width: 100%;
+  padding: 20px;
+  background: #bdbdbd;
+  order: 1;
+  display: none;
+}
+
+.mytabs2 input[type='radio']:checked + label + .tab2 {
+  display: block;
+}
+
+.mytabs2 input[type='radio']:checked + label {
+  background: #bdbdbd;
+}
+
+
