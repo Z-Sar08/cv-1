@@ -201,7 +201,7 @@ footer a:not(.nav-link) {
 .mytabs .tab {
   width: 100%;
   padding: 20px;
-  background: #CACFCE;
+  background: #bdbdbd;
   order: 1;
   display: none;
 }
@@ -211,6 +211,6 @@ footer a:not(.nav-link) {
 }
 
 .mytabs input[type='radio']:checked + label {
-  background: #CACFCE;
+  background: #bdbdbd;
 }
 
