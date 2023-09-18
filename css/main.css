@@ -219,24 +219,26 @@ footer a:not(.nav-link) {
 .mytabs2 {
   display: flex;
   flex-wrap: wrap;
-  max-width: 600px; /* Corrected */
+  max-width: 800px; /* Set the desired max-width for your tabs */
   margin: 50px auto;
-  padding: 25px;
+  padding: 0; /* Remove padding */
 }
+
 .mytabs2 input[type="radio"] {
   display: none;
 }
 
 
 .mytabs2 label {
-  padding: 25px;
+  padding: 20px 25px; /* Adjust padding as needed */
   background: #e2e2e2;
   font-weight: bold;
 }
 
+
 .mytabs2 .tab2 {
   width: 100%;
-  padding: 20px;
+  padding: 20px; /* Adjust padding as needed */
   background: #eeeeee;
   order: 1;
   display: none;
