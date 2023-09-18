@@ -183,9 +183,9 @@ footer a:not(.nav-link) {
 .mytabs {
   display: flex;
   flex-wrap: wrap;
-  max-width: 600px; /* Corrected */
+  max-width: 800px; /* Set the desired max-width for your tabs */
   margin: 50px auto;
-  padding: 25px;
+  padding: 0; /* Remove padding */
 }
 
 .mytabs input[type="radio"] {
@@ -193,14 +193,14 @@ footer a:not(.nav-link) {
 }
 
 .mytabs label {
-  padding: 25px;
+  ppadding: 20px 25px; /* Adjust padding as needed */
   background: #e2e2e2;
   font-weight: bold;
 }
 
 .mytabs .tab {
   width: 100%;
-  padding: 20px;
+  padding: 20px; /* Adjust padding as needed */
   background: #eeeeee;
   order: 1;
   display: none;
