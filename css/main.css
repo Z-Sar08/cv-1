@@ -179,3 +179,62 @@ footer a:not(.nav-link) {
   text-decoration: none;
   color: inherit;
 }
+
+
+
+
+/* Style for Skills & Interests tabs */
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+section {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 0 0 5px 5px;
+}
+
+input[type="radio"]:checked ~ section {
+  display: block;
+}
+
+/* Style for Portfolio tabs */
+/* Repeat the above styles, but use a different group name for radio buttons and labels */
+
+input[type="radio"].portfolio {
+  /* Add a unique class to distinguish these radio buttons */
+  display: none;
+}
+
+label.portfolio {
+  /* Add a unique class to distinguish these labels */
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+}
+
+input[type="radio"].portfolio:checked + label.portfolio {
+  /* Add a unique class to distinguish these labels */
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+/* Define styles for portfolio sections as well */
