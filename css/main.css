@@ -277,60 +277,74 @@ main {
   background: #fff;
 }
 
-/* Style for Tabs */
-.tabs {
-  display: flex;
-  border-bottom: 1px solid #ddd;
-}
-
-input[type="radio"] {
-  display: none;
-}
-
-label {
-  flex: 1;
-  padding: 15px 25px;
-  font-weight: 600;
-  text-align: center;
-  color: #bbb;
-  border: 1px solid transparent;
-  cursor: pointer;
-}
-
-input[type="radio"]:checked + label {
-  color: #555;
-  border: 1px solid #ddd;
-  border-top: 2px solid orange;
-  border-bottom: 1px solid #fff;
-}
-
-/* Style for Tab Content */
 section {
   display: none;
   padding: 20px 0 0;
   border-top: 1px solid #ddd;
 }
 
-input[type="radio"]:checked ~ section {
+input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+}
+
+label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+label[for*='1']:before {
+  content: '\f1cb';
+}
+
+label[for*='2']:before {
+  content: '\f17d';
+}
+
+label[for*='3']:before {
+  content: '\f16b';
+}
+
+label[for*='4']:before {
+  content: '\f1a9';
+}
+label[for*='5']:before {
+  content: '\f1aa';
+}
+label[for*='6']:before {
+  content: '\f1ae';
+}
+
+label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+input:checked + label {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 2px solid orange;
+  border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5
+#tab6:checked ~ #content6{
   display: block;
 }
-
-/* Define styles for tab icons (FontAwesome) */
-label[for*='tab1']:before {
-  content: '\f1cb';
-  font-family: FontAwesome;
-  font-weight: normal;
-  margin-right: 10px;
-}
-
-label[for*='tab2']:before {
-  content: '\f17d';
-  font-family: FontAwesome;
-  font-weight: normal;
-  margin-right: 10px;
-}
-
-/* Add more icon styles for additional tabs as needed */
 
 @media screen and (max-width: 650px) {
   label {
@@ -342,10 +356,8 @@ label[for*='tab2']:before {
     font-size: 18px;
   }
 }
-
 @media screen and (max-width: 400px) {
   label {
     padding: 15px;
   }
 }
-
