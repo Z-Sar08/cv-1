@@ -193,13 +193,13 @@ footer a:not(.nav-link) {
 }
 
 .mytabs label {
-  ppadding: 20px 25px; /* Adjust padding as needed */
+  padding: 20px 25px; /* Adjust padding as needed */
   background: #e2e2e2;
   font-weight: bold;
 }
 
 .mytabs .tab {
-  width: 100%;
+   width: 100%;
   padding: 20px; /* Adjust padding as needed */
   background: #eeeeee;
   order: 1;
