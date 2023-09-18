@@ -183,12 +183,12 @@ footer a:not(.nav-link) {
 .mytabs {
   display: flex;
   flex-wrap: wrap;
-  max-width; 600px;
+  max-width: 600px; /* Corrected */
   margin: 50px auto;
   padding: 25px;
 }
 
-.mytabs input[type:"radio"] {
+.mytabs input[type="radio"] {
   display: none;
 }
 
@@ -219,14 +219,14 @@ footer a:not(.nav-link) {
 .mytabs2 {
   display: flex;
   flex-wrap: wrap;
-  max-width; auto;
+  max-width: 600px; /* Corrected */
   margin: 50px auto;
   padding: 25px;
 }
-
-.mytabs2 input[type:"radio"] {
+.mytabs2 input[type="radio"] {
   display: none;
 }
+
 
 .mytabs2 label {
   padding: 25px;
