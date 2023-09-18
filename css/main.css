@@ -220,8 +220,6 @@ footer a:not(.nav-link) {
   display: flex;
   flex-wrap: wrap;
   max-width: 800px; /* Set the desired max-width for your tabs */
-  max-height: 400px; /* Set the desired max-height */
-  overflow-y: auto; /* Add scrollbars if content exceeds max-height */
   margin: 50px auto;
   padding: 0; /* Remove padding */
 }
