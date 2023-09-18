@@ -182,59 +182,170 @@ footer a:not(.nav-link) {
 
 
 
-
+/*
 /* Style for Skills & Interests tabs */
+/*input[type="radio"] {
+  /*display: none;
+/*}
+
+/*label {
+  /*cursor: pointer;
+  /*padding: 10px 20px;
+  /*background-color: #f0f0f0;
+  /*color: #333;
+  /*border: 1px solid #ccc;
+ /* border-radius: 5px 5px 0 0;
+/*}
+
+/*input[type="radio"]:checked + label {
+ /* background-color: #fff;
+ /* border-bottom: 1px solid #fff;
+/*}
+
+/*section {
+/*  display: none;
+/*  padding: 20px;
+/*  border: 1px solid #ccc;
+/*  border-radius: 0 0 5px 5px;
+/*}
+
+/*input[type="radio"]:checked ~ section {
+/*  display: block;
+/*}
+
+/* Style for Portfolio tabs */
+/* Repeat the above styles, but use a different group name for radio buttons and labels */
+
+/*input[type="radio"].portfolio {
+  /* Add a unique class to distinguish these radio buttons */
+/*  display: none;
+/*}
+
+/*label.portfolio {
+  /* Add a unique class to distinguish these labels */
+/*  cursor: pointer;
+/*  padding: 10px 20px;
+/*  background-color: #f0f0f0;
+/*  color: #333;
+/*  border: 1px solid #ccc;
+ /* border-radius: 5px 5px 0 0;
+/*}
+
+/*input[type="radio"].portfolio:checked + label.portfolio {
+  /* Add a unique class to distinguish these labels */
+/*  background-color: #fff;
+/*  border-bottom: 1px solid #fff;
+/*}*/
+
+/* Define styles for portfolio sections as well */
+
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font: 14px/1 'Open Sans', sans-serif;
+  color: #555;
+  background: #eee;
+}
+
+h1 {
+  padding: 50px 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+main {
+  min-width: 320px;
+  max-width: 800px;
+  padding: 50px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* Style for Tabs */
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
 input[type="radio"] {
   display: none;
 }
 
 label {
+  flex: 1;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
   cursor: pointer;
-  padding: 10px 20px;
-  background-color: #f0f0f0;
-  color: #333;
-  border: 1px solid #ccc;
-  border-radius: 5px 5px 0 0;
 }
 
 input[type="radio"]:checked + label {
-  background-color: #fff;
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 2px solid orange;
   border-bottom: 1px solid #fff;
 }
 
+/* Style for Tab Content */
 section {
   display: none;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 0 0 5px 5px;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
 }
 
 input[type="radio"]:checked ~ section {
   display: block;
 }
 
-/* Style for Portfolio tabs */
-/* Repeat the above styles, but use a different group name for radio buttons and labels */
-
-input[type="radio"].portfolio {
-  /* Add a unique class to distinguish these radio buttons */
-  display: none;
+/* Define styles for tab icons (FontAwesome) */
+label[for*='tab1']:before {
+  content: '\f1cb';
+  font-family: FontAwesome;
+  font-weight: normal;
+  margin-right: 10px;
 }
 
-label.portfolio {
-  /* Add a unique class to distinguish these labels */
-  cursor: pointer;
-  padding: 10px 20px;
-  background-color: #f0f0f0;
-  color: #333;
-  border: 1px solid #ccc;
-  border-radius: 5px 5px 0 0;
+label[for*='tab2']:before {
+  content: '\f17d';
+  font-family: FontAwesome;
+  font-weight: normal;
+  margin-right: 10px;
 }
 
-input[type="radio"].portfolio:checked + label.portfolio {
-  /* Add a unique class to distinguish these labels */
-  background-color: #fff;
-  border-bottom: 1px solid #fff;
+/* Add more icon styles for additional tabs as needed */
+
+@media screen and (max-width: 650px) {
+  label {
+    font-size: 0;
+  }
+
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
 }
 
-/* Define styles for portfolio sections as well */
+@media screen and (max-width: 400px) {
+  label {
+    padding: 15px;
+  }
+}
+
