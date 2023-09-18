@@ -142,8 +142,6 @@ footer a:not(.nav-link) {
     page-break-before: always; } }
 
 
-
-
 .image-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
