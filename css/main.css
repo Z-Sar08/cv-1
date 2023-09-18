@@ -178,39 +178,3 @@ footer a:not(.nav-link) {
   text-decoration: none;
   color: inherit;
 }
-
-/*start here*/
-.tabs {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 400px;
-  font-family: sans-serif;
-}
-
-.tabs_label {
-  padding: 10px 16px;
-  cursor: pointer;
-}
-
-.tabs_radio{
-  display: none;
-}
-
-.tabs_content {
-  order: 1;
-  width:100%;
-  border-bottom: 3px solid #dddddd;
-  line-height: 1.5;
-  font-size:0.9em;
-  display: none;
-}
-
-.tabs_radio:checked + .tabs_label {
-  font-weight: bold;
-  color: #009578
-  border-bottom: 2px solid #009578;
-}
-
-.tabs_radio:checked + .tabs_label + .tabs_content {
-  display: initial;
-}
