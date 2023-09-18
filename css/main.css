@@ -140,3 +140,43 @@ footer a:not(.nav-link) {
   .page-break {
     padding-top: 5rem;
     page-break-before: always; } }
+
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  gap: 20px;
+}
+
+.image-item {
+  position: relative;
+}
+
+.image-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-item:hover .image-title {
+  opacity: 1;
+}
+
+.image-item a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
